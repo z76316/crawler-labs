@@ -4,7 +4,6 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.common.by import By
 from time import sleep
 from bs4 import BeautifulSoup
-import chromedriver_binary
 
 url_list = {
     "ptt_movie": "https://www.ptt.cc/bbs/movie/index.html",
@@ -17,7 +16,8 @@ url = url_list["rent591"]
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
 
-browser = webdriver.Chrome(options=chrome_options, executable_path='./chromedriver')
+# browser = webdriver.Chrome(options=chrome_options, executable_path='./chromedriver')
+browser = webdriver.Chrome(options=chrome_options, executable_path='/usr/bin/chromedriver')
 # browser = webdriver.Chrome(executable_path='./chromedriver')
 browser.get(url)
 
