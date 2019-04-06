@@ -17,7 +17,7 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
 
 # browser = webdriver.Chrome(options=chrome_options, executable_path='./chromedriver')
-browser = webdriver.Chrome(options=chrome_options, executable_path='/usr/bin/chromedriver')
+browser = webdriver.Chrome(options=chrome_options)
 # browser = webdriver.Chrome(executable_path='./chromedriver')
 browser.get(url)
 
